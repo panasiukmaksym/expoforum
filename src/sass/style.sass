@@ -1,0 +1,340 @@
+@import "fonts"
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    color: white
+    font-style: normal
+
+.container
+    width: 1110px
+    margin: 0 auto
+
+main
+    height: 800px
+    background: url('../img/bgc.png') center center/cover no-repeat
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.header
+    height: 90px
+    padding: 0px 180px
+    width: 100%
+    border-bottom: 1px solid white
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__items
+        width: 170px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__language
+        display: flex
+        align-items: center
+        gap: 10px
+        a
+            text-decoration: none
+    &__descr
+        font-family: 'Circle'
+        font-weight: 400
+        font-size: 16px
+        line-height: 135%
+        margin-top: 4px
+    &__menu
+        width: 30px
+        display: none
+        img
+            width: 100%
+
+
+.nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 600px
+    &__link
+        a
+            font-family: 'Circle'
+            font-weight: 400
+            font-size: 16px
+            line-height: 135%
+            text-decoration: none
+
+.first
+    &__block
+        display: flex
+        justify-content: space-between
+    &__about
+        width: 535px
+        min-height: 225px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-bottom: 300px
+    &__title
+        font-family: 'Plumb'
+        font-style: normal
+        font-weight: 700
+        font-size: 64px
+        line-height: 160%
+    &__subtitle
+        font-family: 'Circle'
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 140%
+    &__arrow
+        display: flex
+        align-items: center
+        gap: 10px
+    &__text
+        font-family: 'Circle'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+    &__grid
+        width: 540px
+        height: 353px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-auto-rows: auto
+        gap: 30px
+        align-self: flex-end
+        margin-bottom: 50px
+    &__card
+        padding: 30px 40px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &_blue
+            background: #2378FC
+        &_aqua
+            background: #30BCC9
+        &_yellow
+            background: #FFC41E
+        &_red
+            background: #F6404F
+    &__descr
+        font-family: 'Plumb'
+        font-style: normal
+        font-weight: 500
+        font-size: 21px
+
+.menu
+    height: 425px
+    padding: 75px 0px
+    background: #2378FC
+    &__block
+        display: flex
+        justify-content: space-between
+    &__card
+        max-width: 210px
+    &__title
+        font-family: 'Plumb'
+        font-style: normal
+        font-weight: 500
+        font-size: 30px
+        line-height: 130%
+        margin-bottom: 30px
+        a
+            text-decoration: none
+    &__link
+        font-family: 'Circle'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 135%
+        margin-bottom: 15px
+        a
+            text-decoration: none
+
+.date
+    background: #FFC41E
+    padding-top: 75px
+    padding-bottom: 80px
+    &__header
+        margin: 0px 0px 55px 0px
+        display: flex
+        justify-content: space-between
+    &__title
+        font-family: 'Plumb'
+        font-style: normal
+        font-weight: 500
+        font-size: 30px
+        line-height: 130%
+        color: #2E373B
+    &__arrow
+        display: flex
+        align-items: center
+        gap: 10px
+    &__text
+        font-family: 'Plumb'
+        font-style: normal
+        font-weight: 500
+        font-size: 21px
+        line-height: 130%
+        a
+            color: #2E373B
+    &__card
+        width: 350px
+        height: 350px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__block
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        gap: 30px
+    &__date
+        font-family: 'Circle'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 135%
+        color: #2E373B
+        margin-top: 20px
+        margin-bottom: 10px
+    &__name
+        font-family: 'Plumb'
+        font-style: normal
+        font-weight: 500
+        font-size: 21px
+        line-height: 130%
+        color: #F6404F
+        margin-bottom: 10px
+    &__descr
+        font-family: 'Circle'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 135%
+        color: #2E373B
+
+.news
+    background: #FAF3E3
+    padding: 75px 0px 85px 0px
+    &__block
+        display: flex
+        justify-content: space-between
+    &__left
+        width: 445px
+        height: 500px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__right
+        width: 530px
+    &__header
+        display: flex
+        justify-content: space-between
+        margin-bottom: 30px
+    &__arrow
+        display: flex
+        align-items: center
+        gap: 10px
+    &__title
+        font-family: 'Plumb'
+        font-style: normal
+        font-weight: 500
+        font-size: 30px
+        line-height: 130%
+        color: #2E373B
+    &__text
+        font-family: 'Plumb'
+        font-style: normal
+        font-weight: 500
+        font-size: 21px
+        line-height: 130%
+        a
+            color: #2E373B
+    &__card
+        display: flex
+        justify-content: flex-start
+        gap: 30px
+        align-items: center
+        margin-bottom: 30px
+    &__date
+        font-family: 'Circle'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 135%
+        color: #F6404F
+        margin-bottom: 14px
+    &__descr
+        font-family: 'Plumb'
+        font-style: normal
+        font-weight: 500
+        font-size: 21px
+        line-height: 130%
+        color: #2E373B
+
+.footer
+    padding: 60px 0px 70px 0px
+    background: #30BCC9
+    &__block
+        display: flex
+        justify-content: space-between
+    &__column
+        max-width: 255px
+    &__card
+        margin-bottom: 40px
+    &__title
+        font-family: 'Plumb'
+        font-style: normal
+        font-weight: 500
+        font-size: 21px
+        line-height: 130%
+        margin-bottom: 20px
+        a
+            text-decoration: none
+    &__link
+        font-family: 'Circle'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 135%
+        margin-bottom: 10px
+        a
+            text-decoration: none
+            color: #E0E0E0
+    &__store
+        margin-bottom: 15px
+    &__contacts
+        width: 220px
+        display: flex
+        justify-content: space-between
+    &__descr
+        font-family: 'Circle'
+        font-style: normal
+        font-weight: 400
+        font-size: 14px
+        line-height: 135%
+        color: #E0E0E0
+        margin-bottom: 25px
+    .subs
+        display: flex
+        &__input
+            width: 215px
+            height: 40px
+            border: none
+            padding-left: 15px
+            font-family: 'Circle'
+            font-style: normal
+            font-weight: 400
+            font-size: 12px
+            line-height: 135%
+            color: #9C9C9C
+        &__button
+            width: 40px
+            height: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #F6404F
+
+@import 'media'
