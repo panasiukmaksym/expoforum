@@ -63,6 +63,52 @@ main
             line-height: 135%
             text-decoration: none
 
+.overflou
+    position: fixed
+    background: rgba(255, 255, 255, 0.5)
+    width: 100%
+    height: 100vh
+    display: none
+    &__menu
+        width: 500px
+        background: black
+        height: 100%
+        display: flex
+        flex-direction: column
+        padding: 40px
+    &__close
+        width: 40px
+        align-self: flex-end
+        img
+            width: 100%
+    &__items
+        padding-top: 100px
+    &__block
+        display: flex
+        gap: 40px
+        align-items: center
+        margin-bottom: 80px
+    &__language
+        gap: 10px
+        display: flex
+        align-items: center
+    &__descr
+        margin-top: 3px
+        font-size: 18px
+        font-family: 'Circle'
+        a
+            text-decoration: none
+    &__search
+        display: flex
+    &__link
+        font-family: 'Circle'
+        font-size: 20px
+        text-transform: uppercase
+        margin-bottom: 20px
+        a
+            text-decoration: none
+
+
 .first
     &__block
         display: flex
